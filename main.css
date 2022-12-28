@@ -56,7 +56,7 @@ body{
     border-radius: 0.3rem;
     border: none;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 20px;
     
     
@@ -71,14 +71,21 @@ body{
 
 input{
     
-    outline-color: #13345e;
+    /* outline:none; */
     width:15rem;
     height: 2.5rem;
-    border-radius: 0.5rem;
+    border:2px solid #13345e;
+    border-radius: 0.3rem;
     text-align: center;
+    background:#fad04b;
+    
     
 
 
+}
+
+::placeholder{
+    color:#13345e;
 }
 
 a{
@@ -103,9 +110,16 @@ form{
 .password{
     margin-top:20px;
     margin-bottom: 20px;
-    /* display: inline; */
+    display: flex;
+    align-items: center;
     
     
+}
+
+.email{
+    display: flex;
+    align-items: center;
+
 }
 
 h1{
@@ -131,5 +145,18 @@ ion-icon{
     color:#13345e;
     width:25px;
     height:25px;
+
     
 }
+
+/* #sub :hover{
+    background-color: #fad04b;
+} */
+
+@media(max-width:768px){
+        .formElements{
+            display: flex;
+            flex-direction: column;
+            margin:0 15px;
+        }
+    }
