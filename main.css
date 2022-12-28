@@ -153,10 +153,10 @@ ion-icon{
     background-color: #fad04b;
 } */
 
-@media(max-width:768px){
+/* @media(max-width:768px){
         .formElements{
             display: flex;
             flex-direction: column;
             margin:0 15px;
         }
-    }
+    } */
